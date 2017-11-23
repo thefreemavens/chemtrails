@@ -1,0 +1,46 @@
+
+{% if page.body_class contains 'home' %}
+
+  <div class="tfm-page-meta invert">
+    <span>Our Power is in Numbers. Join The Free Mavens.</span>
+    <span><a href="{{ site.baseurl }}/privacy-policy" target="_blank">Privacy Policy</a> &nbsp; | &nbsp; <a href="{{ site.baseurl }}/terms-of-service" target="_blank">Terms of Service</a>.</span>
+  </div>
+  {% include divider.html %}
+
+{% elsif page.body_class contains 'salute' %}
+
+  <div class="tfm-page-meta">
+    <div class="tfm-fol">
+      <div id="tfm-anim-sg-footer"></div>
+    </div>
+    <span>We’re in early-beta and invite-only stage.</span>
+    <span><a href="{{ site.baseurl }}/invite/" title="Get Invited">Get invited or get on the list.</a></span>
+  </div>
+  {% include divider.html %}
+
+{% elsif page.body_class contains 'legal' %}
+
+  <div class="tfm-page-meta">
+    <span>Last edited on {{ page.date_modified }}</span>
+    <span><a href="{{ site.baseurl }}/">Back to Homepage.</a></span>
+  </div>
+  {% include divider.html %}
+
+{% else %}
+
+  <div class="tfm-page-meta">
+    <span>Last edited by 
+      {% if page.co_author %}
+        {{ page.co_author.last}}
+      {% elsif page.author %}
+        {{ page.author}}
+      {% else %}
+        an {{ site.author }}
+      {% endif %} on {{ page.date_modified }}
+    </span>
+    <span><a href="{{ site.repo }}/{{page.path}}" title="Edit this page on GitHub" target="_blank">This page is being edited by the community</a></span>
+    {% include divider.html %}
+
+  </div>
+
+{% endif %}

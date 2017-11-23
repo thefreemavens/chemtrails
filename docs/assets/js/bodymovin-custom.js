@@ -1,0 +1,1 @@
+var anim_sg,elem=document.getElementById("tfm-fol"),animData={container:elem,renderer:"svg",loop:!0,autoplay:!0,rendererSettings:{progressiveLoad:!1},path:"../../assets/json/fol-home.json"};anim_sg=bodymovin.loadAnimation(animData),bodymovin.setSpeed(.2);

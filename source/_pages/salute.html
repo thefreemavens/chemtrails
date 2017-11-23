@@ -1,0 +1,90 @@
+---
+layout: page
+title: Salute
+order: 4
+body_class: salute
+full_width: true
+author: Horatio N. Gold
+## Edit below
+co_author:
+  - Horatio N. Gold
+date_modified: November 6, 2017
+permalink: /salute/
+---
+
+<section class="tfm-wp tfm-cover">
+<!-- <section class="tfm-wp hero"> -->
+  <div id="tfm-background" class="tfm-bg"></div>
+  <h1>We salute <a href="#" class="tfm-scroll-link">you</a></h1>
+  <a href="#" class="tfm-scroll tfm-scroll-link">
+    <span class=""></span>
+    <span>scroll to view</span>
+  </a>
+</section>
+
+<section class="tfm-wp tfm-intro" data-animate-down="tfm-wp-item-intro" data-animate-up="tfm-wp-item-default">
+  <span class="tfm-marker"></span>
+    <div id="tfm-anim-sg"></div>
+  <h2>The Free Mavens are immensely grateful to all of the free, open-minded, and truth seekers out there. You've helped us gain a better understanding of the biggest issues we are faced by the world today, and inspired a desire within us to unite and help create a better future for all of us.</h2>
+  <h3><b>Thank You.</b></h3>
+</section>
+
+<section class="tfm-wp tfm-ty">
+  <ul class="tfm-collapse-ul">
+
+    {% for hero in site.data.heros %}
+
+    {% if hero.name %}
+    <li class="tfm-collapse-li active">
+
+      <a class="tfm-collapse-title clickable collapsed">
+        {{ hero.name }}
+      </a>
+
+      <ul class="collapsein">
+
+          {% if hero.url %}
+            <li>
+              <a href="{{ hero.url }}" target="_blank">Home</a>
+            </li>
+          {% endif %}
+
+          {% if hero.facebook %}
+            <li>
+              <a href="{{ hero.facebook }}" target="_blank">Facebook</a>
+            </li>
+          {% endif %}
+
+          {% if hero.twitter %}
+            <li>
+              <a href="{{ hero.twitter }}" target="_blank">Twitter</a>
+            </li>
+          {% endif %}
+
+          {% if hero.instagram %}
+            <li>
+              <a href="{{ hero.instagram }}" target="_blank">Instagram</a>
+            </li>
+          {% endif %}
+
+          {% if hero.google %}
+            <li>
+              <a href="{{ hero.google }}" target="_blank">Google+</a>
+            </li>
+          {% endif %}
+
+          {% if hero.youtube %}
+            <li>
+              <a href="{{ hero.youtube }}" target="_blank">YouTube</a>
+            </li>
+          {% endif %}
+
+      </ul>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>
+
+{% include page-meta.html %}
+

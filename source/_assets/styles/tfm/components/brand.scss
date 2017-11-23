@@ -1,0 +1,85 @@
+// ==================================================================
+// TFM Logo Component - Brand Assets
+//
+
+// ==================================================================
+// TFM Logomark
+//
+
+.tfm-logo {
+  text-align: center;
+  padding-top: 48px;
+  svg {
+    // White on Purple
+    .m    { fill: $tfm-light; }
+    .hex  { fill: $tfm-primary-color; }
+    // Purple on White
+    &.invert {
+      .m    { fill: $tfm-primary-color; }
+      .hex  { fill: $tfm-light; }
+    }
+  }
+}
+
+
+// ==================================================================
+// TFM Logotype
+//
+
+.tfm-logotype {
+  text-transform: uppercase;
+  .tfm-line-1 {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 16px;
+    margin-right:-12px;
+    // position: relative;
+    // left: 8px;
+  }
+  .tfm-line-2 {
+    display: block;
+    font-family: $tfm-secondary-font;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+}
+
+// ==================================================================
+// TFM Logo + Page Meta
+//
+
+.tfm-page-meta {
+  margin-top: 1rem;
+  &.invert {
+    a {
+      color: $tfm-success;
+      &:hover {
+        color: $tfm-alert;
+      }
+    }
+  }
+}
+
+.tfm-divider {
+  display:table;
+  width:100%;
+  margin: 1rem auto;
+  // z-index: 0;
+  div {
+    display:table-cell;
+  }
+}
+
+.tfm-icon {
+  width: 47px;
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+  left: 1px;
+  svg {
+    stroke: $tfm-dark;
+  }
+}
+
+

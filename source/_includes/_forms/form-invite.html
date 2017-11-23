@@ -1,0 +1,33 @@
+<div class="tfm-form">
+  <!-- <hr> -->
+  <!-- <h3>Initiation Form</h3> -->
+  <form id="tfm-join" action method="POST">
+    
+    <div class="form-group">
+      <input id="contact-email" type="text" onblur="validateEmail(this);" required="required" class="form-control" name="entry.1097449195" aria-describedby="contact-email-error">
+       <label class="control-label" for="contact-email">Email address</label><i class="bar"></i>
+      <!-- <label class="control-label" for="input">Textfield</label><i class="bar"></i> -->
+    </div>
+
+    <p class="tfm-form-disclaimer" markdown="1">
+      **Remember:** The Free Mavens is not for everyone. Our community consists of free, open minded and truth seekers with a shared goal that is inline with both the [Mavenry]({{ site.baseurl }}/mavenry/) ideology and [What we stand for]({{ site.baseurl }}/mission/). Please take a short read and decide if *Freemavenry* is for you.
+    </p>
+
+    <!-- <div class="form-group"> -->
+      <!-- <input type="text" required="required" class="form-control" id="contact-telegram" name="entry.311722560" aria-describedby="contact-telegram-error"> -->
+       <!-- <label class="control-label" for="contact-telegram">Telegram @name</label><i class="bar"></i> -->
+      <!-- <label class="control-label" for="input">Textfield</label><i class="bar"></i> -->
+    <!-- </div> -->
+
+    <button id="contact-form-submit" type="submit" class="tfm-btn tfm-btn-mute">Request Invite</button>
+
+  </form>
+</div>
+
+<div class="tfm-page-meta">
+  <span>We’re in early-beta and invite-only stage.</span>
+  <span>Disclaimer: The Free Mavens is not a Conspiracy Theory venture.</span>
+  
+  {% include divider.html %}
+  
+</div>

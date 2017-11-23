@@ -1,0 +1,22 @@
+// ==================================================================
+// TFM: Utilities / Grid
+//
+
+.tfm-flex {
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+
+.tfm-flex-item {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+}
+
+// Fix spacing between quote images on a grid
+.quotes .tfm-flex { font-size: 0; }

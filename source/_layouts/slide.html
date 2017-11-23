@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+    <body {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
+    <div class="tfm-fol">
+      <div id="tfm-fol"></div>
+    </div>
+    <main class="tfm-content" aria-label="Content">
+      <div class="tfm-content-inner">
+
+        <div class="tfm-logo">
+          <a href="{{ site.baseurl }}{% link index.md %}" title="{{ site.title | escape }}"></a>
+        </div>
+
+        {{ content }}
+
+        {% include divider.html %}
+
+        {% include footer.html %}
+
+      </div>
+    </main>
+  </body>
+</html>

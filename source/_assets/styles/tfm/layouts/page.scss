@@ -1,0 +1,41 @@
+// ==================================================================
+// TFM Layouts / Page
+//
+
+// ==================================================================
+// Page 666px
+//
+.tfm-page {
+  padding: 0 2rem;
+  max-width: 666px;
+  margin: 0 auto;
+}
+
+.tfm-page-header {
+  text-align: center;
+}
+
+// ==================================================================
+// Page 100%
+//
+
+.tfm-page-full {
+  @extend .tfm-page;
+  max-width: 80%;
+  @include media(">phone", "<=tablet") {
+    max-width: 100%; 
+  }
+}
+
+// ==================================================================
+// Page Grid
+//
+
+.tfm-page-grid {
+  @extend .tfm-flex;
+  a {
+    @extend .tfm-flex-item;
+    width: 360px;
+    margin: 2px
+  }
+}

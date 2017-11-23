@@ -1,0 +1,17 @@
+// ==================================================================
+// TFM: Layouts / Home
+
+// TFM logo and menu
+.tfm-app-header {
+  // height: 0;  
+  // margin-bottom: 66px;
+}
+
+
+.salute .tfm-app-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 48px;
+}

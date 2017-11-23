@@ -1,0 +1,271 @@
+// ==================================================================
+// TFM: Layouts / Home
+//
+
+.tfm-marker {
+  // width: 100%;
+  height: 1px;
+  margin-top: 1px;
+  // margin-bottom: $tfm-gap * $tfm-gr * $tfm-gr;
+  background: transparent;
+  display: block;
+}
+
+.tfm-bg {
+  background-image: url(../images/tfm-flags-clr.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: 0s linear;
+  transition-property: background-position;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.tfm-fol {
+  background-image: url(../images/tfm-fol.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 224px;
+  height: 251px;
+  background-size: 224px 251px;
+  margin: 6rem auto 6rem;
+}
+
+#tfm-anim-sg {
+  display: block;
+  max-width: 33%;
+  height: 100%;
+  margin: 6rem auto 0;
+  color: #888;
+}
+
+#tfm-anim-sg-footer {
+  display: block;
+  width: 252px;
+  svg {
+    position: relative;
+    right: 15px;
+  }
+}
+
+
+.salute {
+  section.tfm-cover {
+    height: 100vh;
+    text-align: center;
+  }
+  h1 {
+    font-family: $tfm-secondary-font;
+    text-transform: uppercase;
+    font-weight: $tfm-font-weight;
+    color: $tfm-light;
+    letter-spacing: 6px;
+    word-spacing: 12px;
+    margin-top: 0;
+    padding-top: 300px;
+    a {
+      padding-bottom: 0.5rem;
+      color: $tfm-light;
+      border-bottom: 5px solid $tfm-light;
+      transition: color 0.33s ease, border-bottom 0.33s ease;
+      &:hover {
+        color: $tfm-dark;
+        border-bottom: 5px solid $tfm-dark;
+      }
+    }
+  }
+  .tfm-logo {
+    padding-top: 0;
+    a {
+      display: block;
+      background: url(../images/tfm-logo-line.svg) center no-repeat;
+      background-size: 60px 68px;
+      width: 60px;
+      height: 68px;
+      margin: 0 auto;
+    }
+  }
+  .tfm-divider {
+    max-width: 66%;
+  }
+  .tfm-page-meta img {
+  }
+}
+
+// .tfm-intro { background-color: $tfm-dark; }
+
+.tfm-intro,
+.tfm-ty {
+  @extend .tfm-page-full;
+  text-align: center;
+  color: $tfm-dark;
+}
+
+.tfm-intro {
+  h2 {
+    @extend .h3;
+    line-height: $tfm-gap * $tfm-gr;
+    @include media(">phone", "<=tablet") { line-height: $tfm-gap }
+    margin: 6rem 0 10rem;
+  }
+  h3 {
+    @extend .h2;
+    margin-bottom: 4rem;
+    b {
+      padding: 2rem 0;
+      border-top: 6px solid #6342ff;
+    }
+  }
+}
+
+.tfm-ty {
+  h3 { padding: 2rem 0; color: $tfm-primary-color; }
+  // li { padding-bottom: 0; }
+}
+
+// ==================================================================
+// TFM: Layouts / Home / Thank You list
+//
+
+// .tfm-ty-ul {
+  // @extend .tfm-ul;
+// }
+
+// .tfm-ty-li {
+//   margin: 3rem 1rem;
+//   a.tfm-ty-item-name {
+//     @extend .h4;
+//     position: relative;
+//     cursor: pointer;
+//     padding-top: 3rem;
+//     display: inline-block;
+//     border-top: 1px solid rgba(0,0,0,0.06);
+//     color: $tfm-dark;
+//     &.muted {
+//       color: lighten($tfm-twilight,6%);
+//       &:hover {
+//         color: $tfm-dark;
+//       }
+//     }
+//     &:before {
+//       content: '';
+//       display: block;
+//       margin: auto;
+//       position: absolute;
+//       top:0;
+//       left: 0;
+//       right: 0;
+//       height: 1px;
+//       width: 0;
+//       background: transparent;
+//       transition: width 0.6s ease, background-color 0.2s ease;
+//     }
+//     &.current {
+//       // border-top: 1px solid rgba(99,66,255,100);
+//       &:before {
+//         width: 100%;
+//         background: $tfm-primary-color;
+//       }
+//     }
+//   }
+// }
+
+// .tfm-ty-item-ul {
+//   // @extend .tfm-collapse;
+//   // margin: 1rem 0;
+// }
+
+// .tfm-ty-item-li {
+//   a {
+//     @extend .h6;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     line-height: 3rem;
+//     letter-spacing: 1px;
+//     // padding: 0.5rem 1rem;
+//     color: $tfm-primary-color;
+//   }
+// }
+// .tfm-ty-item {
+//   position: relative;
+//   width: 100%;
+//   height: 128px;
+// }
+
+// .tfm-ty-item-inner {
+//   // position: absolute;
+//   left: 0;
+//   right: 0;
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .tfm-ty-item-name {
+//   // display: none; ///////////////////////////////////////
+//   border-top: 1px solid rgba(0,0,0,0.06);
+//   a {
+//     // display: inline-block;
+//     @extend .h4;
+//     @extend .tfm-valign;
+//     color: $tfm-dark;
+//     padding: 3rem 1rem 0.5rem;
+//     transition: 0.33s;
+//     // border-top: 1px solid rgba(0,0,0,0.06);
+//     &:hover {
+//       color: $tfm-primary-color;
+//       border-bottom: 1px solid rgba(99,66,255,100);
+//       // background-color: rgba(0,0,0,0.03);
+//     }
+//   }
+// }
+
+// .tfm-ty-item-links {
+//   display: block;
+//   // position: relative;
+//   // line-height: 1rem;
+//   // top: 35px;
+//   a {
+//     display: block;
+//     font-size: $tfm-h0-s;  
+//     // font-size: $tfm-h6;
+//     // @include media(">phone", "<=tablet") { font-size: $tfm-h6; padding: 3rem 0.5rem; }
+//     padding: 0.5rem 1rem;
+//     // display: none; ///////////////////////////////////////
+//   }
+// }
+
+
+
+
+
+// ==================================================================
+// TFM: Layouts / Home / Bodymovin
+//
+
+#bodymovin,
+#tfm-anim-icon {
+  background-color:#fff;
+  width:50px;
+  height:50px;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  margin: $tfm-gap * $tfm-gr * $tfm-gr auto;
+  svg {
+    // fill: transparent;
+    path {
+      stroke: $tfm-primary-color;
+    }
+  }
+}
+
+// #tfm-anim-icon {
+//   position: relative;
+//   top: 96px;
+// }
+
+

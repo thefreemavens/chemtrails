@@ -1,0 +1,35 @@
+<header class="tfm-app-header">
+
+  <div class="tfm-menu-icon">
+  {% if page.full_width == true %}
+    <div class="tfm-menu-icon-inner light">
+  {% else %}
+    <div class="tfm-menu-icon-inner">
+  {% endif %}
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  
+  <div class="tfm-menu">
+    <ul class="tfm-menu-links">
+        <li><a href="{{ site.baseurl }}/" title="{{ site.title | escape }}">Home</a></li>
+        <li><a href="{{ site.baseurl }}/mavenry/" title="Mavenry">Mavenry</a></li>
+        <li><a href="{{ site.baseurl }}/mission/" title="Mission">Our Mission</a></li>
+        <li><a href="{{ site.baseurl }}/be-a-maven/" title="Be a Maven">Be a Maven</a></li>
+        <li><a href="{{ site.baseurl }}/invite/" title="Get Invited">Join</a></li>
+    </ul>
+  </div>
+
+  <div class="tfm-logo">
+    <a href="{{ site.baseurl }}{% link index.md %}" title="{{ site.title | escape }}">
+      {% if page.layout == 'page' or page.layout == 'home' %}
+        {% unless page.body_class == 'salute' %}
+          {% include _svg/tfm-logo.svg %}
+        {% endunless %}
+      {% endif %}
+    </a>
+  </div>
+
+</header>

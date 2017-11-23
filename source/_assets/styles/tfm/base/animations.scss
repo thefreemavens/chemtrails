@@ -1,0 +1,90 @@
+// ==================================================================
+// TFM Base  / Animations
+//
+
+// ==================================================================
+// TFM Animation @extends
+//
+
+
+.tfm-hidden {
+  opacity: 0;
+  transform: translateY(166px);
+}
+
+.tfm-in {
+  opacity: 1;
+  transition-property: transform,opacity;
+  transition-duration: 0.66s;
+  transition-timing-function: ease;
+  transform: translateY(0);
+}
+
+.tfm-out {
+  opacity: 0;
+  transition-property: transform,opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
+  transform: translateY(-66px);
+}
+
+.salute {
+  .tfm-logo,
+  .tfm-scroll,
+  .tfm-cover h1 {
+    @extend .tfm-hidden;
+  }
+}
+
+// ==================================================================
+// Sections:
+//
+// cover / default
+//
+
+.tfm-wp-item-default {
+  .tfm-logo,
+  .tfm-scroll,
+  .tfm-cover h1 {
+    @extend .tfm-in;
+  }
+  .tfm-cover h1 {
+    transition-duration: 1.33s;
+  }
+}
+
+// ==================================================================
+// tfm-intro
+//
+
+.tfm-wp-item-intro {
+  .tfm-logo,
+  .tfm-scroll,
+  .tfm-cover h1 {
+    @extend .tfm-out;
+  }
+}
+
+// ==================================================================
+// tfm-fol
+//
+// .slide .tfm-fol {
+//   -webkit-animation-name: rotate;
+//   -webkit-animation-duration:666s;
+//   -webkit-animation-iteration-count:infinite;
+//   -webkit-animation-timing-function:linear;
+//   -moz-animation-name: rotate;
+//   -moz-animation-duration:666s;
+//   -moz-animation-iteration-count:infinite;
+//   -moz-animation-timing-function:linear;
+// }
+
+// @-webkit-keyframes rotate {
+//   from {-webkit-transform:rotate(0deg);}
+//   to {  -webkit-transform:rotate(360deg);}
+// }
+
+// @-moz-keyframes rotate {
+//   from {-moz-transform:rotate(0deg);}
+//   to {  -moz-transform:rotate(360deg);}
+// }

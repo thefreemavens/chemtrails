@@ -1,0 +1,73 @@
+// ==================================================================
+// Global
+//
+
+// Set fonts 
+html,
+body,
+button                    { font-family: $tfm-primary-font; }
+
+body                      { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+// Set sizes
+.h0, p                    { font-size: $tfm-h0; @include media(">phone", "<=tablet") { font-size: $tfm-h0-s; }}  // 18px
+
+.h1, h1                   { font-size: $tfm-h1; @include media(">phone", "<=tablet") { font-size: $tfm-h1-s; }}  // 48px
+.h2, h2                   { font-size: $tfm-h2; @include media(">phone", "<=tablet") { font-size: $tfm-h3; }}  // 36px
+.h3, h3                   { font-size: $tfm-h3; @include media(">phone", "<=tablet") { font-size: $tfm-h4; }}  // 30px
+.h4, h4                   { font-size: $tfm-h4; @include media(">phone", "<=tablet") { font-size: $tfm-h5; }}  // 24px
+.h5, h5                   { font-size: $tfm-h5; }  // 21px
+.h6, h6                   { font-size: $tfm-h6; }  // 15px
+.h7                       { font-size: $tfm-h7; }  // 14px         
+.h8                       { font-size: $tfm-h8; }  // 12px         
+.h9                       { font-size: $tfm-h9; }  // 10px         
+
+// Set weight
+// Set line-height
+.h0, p                    { line-height: $tfm-gr; }
+.h1, h1                   { font-weight: $tfm-heading-font-weight; line-height: $tfm-line-height; }
+
+.h2,.h3,.h4,.h5,.h6,
+h2, h3, h4, h5, h6        { font-weight: $tfm-body-font-weight; line-height: $tfm-line-height; }
+
+// Set extra space 
+h1                        { margin-bottom: $tfm-gap * $tfm-gr; @include media(">phone", "<=tablet") { margin-bottom: $tfm-gap; }}
+h2, h3, h4, h5, h6        { margin-bottom: $tfm-gap; }
+p                         { margin-bottom: $tfm-gap; @include media(">phone", "<=tablet") { margin-bottom: $tfm-gap / $tfm-gr; } }
+
+p + h2, p + h3,
+ul + p, ul + h2, ul +h3           { margin-top: $tfm-gap * $tfm-gr; }
+
+// ==================================================================
+// Custom
+//
+
+.tfm-page-title           { margin-top: 4rem; }
+.ftm-footnotes ol         { font-size: $tfm-h6; }
+.ftm-footnotes p          { font-size: $tfm-h6; margin-bottom: 0.5rem;}
+
+a.footnote:before         { content: "["; }
+a.footnote:after          { content: "]"; }
+
+// Add extra gap after first h2. Then overwrite for specific pages.
+.tfm-page-content > h2:first-child { margin-bottom: $tfm-gap * $tfm-gr; @include media(">phone", "<=tablet") { margin-bottom: $tfm-gap; }}
+.code-of-conduct .tfm-page-content > h2:first-child { margin-bottom: $tfm-gap; }
+
+// ==================================================================
+// Layout / Slide
+//
+
+.tfm-pre-title {
+  text-transform: uppercase;
+  word-spacing: 2px;
+  font-size: $tfm-h0-s;
+  font-weight: $tfm-font-weight;
+  color: $tfm-success;
+}
+
+.tfm-post-title {
+  font-size: $tfm-h6;
+  // font-weight: $tfm-font-weight;
+  color: $tfm-light;
+  margin: $tfm-gap / $tfm-gr 0;
+}
