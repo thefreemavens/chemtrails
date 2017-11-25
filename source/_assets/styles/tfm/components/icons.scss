@@ -6,10 +6,52 @@
 // Icons / Metadron
 //
 
-.tfm-icon-meta {
+// .tfm-icon-meta {
+//   display: block;
+//   margin: $tfm-gap * $tfm-gr auto 0;
+//   width: 100px;
+//   height: 100px;
+//   // background: $tfm-dark;
+// }
+
+// ==================================================================
+// Icons / Add
+//
+
+.tfm-add-icon {
+  width: 52px;
+  height: 52px;
   display: block;
-  margin: $tfm-gap * $tfm-gr auto 0;
-  width: 100px;
-  height: 100px;
-  // background: $tfm-dark;
+  border-radius: 100px;
+  position: absolute;
+  bottom: -25px;
+  right: 25px;
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.22);
+  background: $tfm-alert-dark;
+  @include media('>phone') {
+    top: -25px;
+    right: -25px;
+    background: $tfm-alert;
+  }
+}
+
+.tfm-add-icon-inner {
+  position: relative;
+  top: 24px;
+  left: 16px;
+  width: 20px;
+  position: absolute;
+  cursor: pointer;
+  span {
+    background: $tfm-light;
+    display: block;
+    position: absolute;
+    height: 2px;
+    // transform: rotate(0deg);
+    // transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+    // opacity: 1;
+    width: 100%;
+    &:nth-child(1) { top: 0px;  }
+    &:nth-child(2) { top: 0px; transform: rotate(90deg); }
+  }
 }

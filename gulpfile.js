@@ -217,14 +217,15 @@ gulp.task('clean', ['clean:jekyll', 'clean:fonts', 'clean:images', 'clean:script
 
 // Builds site anew.
 gulp.task('build', function(callback) {
-    runSequence('clean', 'build:jekyll', ['build:scripts', 'build:json', 'build:images', 'build:styles', 'build:html'], 'root-items',
+    // runSequence('clean', 'build:jekyll', ['build:scripts', 'build:json', 'build:images', 'build:styles', 'build:html'], 'root-items',
+    runSequence('clean', 'build:jekyll', ['build:scripts', 'build:images', 'build:styles', 'build:html'], 'root-items',
         callback);
 });
 
 // Builds site anew using local config.
 gulp.task('build:local', function(callback) {
-    // runSequence('clean', ['build:jekyll:local', 'build:scripts', 'build:images', 'build:styles', 'build:fonts'],
-    runSequence('clean', 'build:jekyll:local', ['build:scripts', 'build:json', 'build:images', 'build:styles'], 'root-items',
+    // runSequence('clean', 'build:jekyll:local', ['build:scripts', 'build:json', 'build:images', 'build:styles'], 'root-items',
+    runSequence('clean', 'build:jekyll:local', ['build:scripts', 'build:images', 'build:styles'], 'root-items',
         callback);
 });
 
