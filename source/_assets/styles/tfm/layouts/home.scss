@@ -81,8 +81,7 @@
   .tfm-counter {
     display: block;
     position: absolute;
-    bottom: 0;
-    // right: 0px;
+    bottom: 50px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -100,8 +99,26 @@
     }
   }
   footer {
-    text-align: right;
+    position: relative;
     margin-bottom: 15px;
+    text-align: left;
+    margin-top: 80px;
+    @include media('>phone') {
+      margin-top: 0;
+    }
+    h3 {
+      font-size: 11px;
+      color: $tfm-twilight;
+      margin: 0;
+    }
+    a {
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+      @include media('>phone') {
+        bottom: 0;
+      }
+    }
   }
 }
 
