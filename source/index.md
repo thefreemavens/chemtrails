@@ -10,9 +10,7 @@ full_width: true
 ---
 
 <div class="tfm-card">
-  <!-- <div class="tfm-logo"> -->
-    <!-- <a href="{{ site.baseurl }}{% link index.md %}" title="{{ site.title | escape }}"></a> -->
-  <!-- </div> -->
+
   <div class="tfm-card-image">
     <a class="tfm-add-icon" href="https://docs.google.com/forms/d/e/1FAIpQLSft4yPbSHeeG6GCopPI2CnIW4s98VqDfB_GH0qtHMW9lpm-xA/viewform?usp=sf_link" target="_blank">
       <div class="tfm-add-icon-inner">
@@ -25,7 +23,7 @@ full_width: true
 
   <main>
     <h1>Chemtrails</h1>
-    <h2>Photo Library</h2>
+    <h2>Tracker App</h2>
     <a href="#" class="tfm-counter">32</a>
     <footer>
       <hr>
@@ -34,19 +32,8 @@ full_width: true
       </a>
     </footer>
   </main>
-  <!-- <div class="tfm-footer"> -->
-    <!-- <div class="tfm-logotype"> -->
-      <!-- <span class="tfm-line-1">The</span> -->
-      <!-- <span class="tfm-line-2">Free Mavens</span> -->
-    <!-- </div> -->
-  <!-- </div> -->
+
 </div>
-
-{% comment %}
-{% include page-meta.html %}
-
-{% include footer.html %}
-{% endcomment %}
 
 
 
