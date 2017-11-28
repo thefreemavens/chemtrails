@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "icon": "resources/icon.png",
+  "features": [{
+      "type": "Feature",
+      "properties": {
+        "name": "New York",
+        "state": "NY",
+        "country": "U.S.A."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9637404, 40.6418908]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Atlantic City",
+        "state": "NJ",
+        "country": "U.S.A."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.657593, 39.329252]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Miami",
+        "state": "FL",
+        "country": "U.S.A."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.227661, 25.883010]
+      }
+    }
+  ]
+}

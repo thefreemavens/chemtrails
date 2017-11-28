@@ -2,9 +2,11 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
   <body {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
+    {% if page.body_class contains 'home' %}
     <div id="preloader">
       <div id="status">&nbsp;</div>
     </div>
+    {% endif %}
     <main class="tfm-content" aria-label="Content">
       <div class="tfm-content-inner">
         {{ content }}

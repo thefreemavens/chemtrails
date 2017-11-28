@@ -60,6 +60,27 @@ gulp.task('clean:styles', function(callback) {
     callback();
 });
 
+//////////////////////////////////////////////////////////////////////////////
+// Styles : Critical
+//
+
+// gulp.task('build:critical', function () {
+//     return sass(paths.sassFiles + '/critical.scss', {
+//         style: 'compressed',
+//         trace: true,
+//         loadPath: [paths.sassFiles]
+//     }).pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
+//         // .pipe(uncss({
+//         //     html: ['source/**/*.html'],
+//         //     ignore: ['.menu-overlay.open', '.hamburger.open', '.open', '.open .nav li']
+//         // }))
+//         .pipe(cleancss())
+//         .pipe(gulp.dest(paths.jekyllCssFiles))
+//         .pipe(gulp.dest(paths.siteCssFiles))
+//         .pipe(browserSync.stream())
+//         .on('error', gutil.log);
+// });
+
 // // Processes critical CSS, to be included in head.html.
 // gulp.task('build:styles:critical', function() {
 //     return sass(paths.sassFiles + '/critical.scss', {

@@ -9,6 +9,8 @@ body_class: home bm
 full_width: true
 ---
 
+<div id="map"></div>
+
 <div class="tfm-card">
 
   <div class="tfm-card-image">
