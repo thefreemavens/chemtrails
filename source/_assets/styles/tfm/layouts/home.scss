@@ -159,16 +159,14 @@
 //   animation-timing-function: linear;
 // }
 
-//// Add Google Maps
-// iframe {
-//   float: left;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   .i4ewOd-pzNkMb-haAclf {
-//     display: none;
-//   }
-// }
+// Add Google Maps
+#map {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;    
+}
 
 // ==================================================================
 // TFM: Layouts / Home / Preloader

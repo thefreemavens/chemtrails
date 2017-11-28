@@ -11,7 +11,16 @@
 
 <!-- Home -->
 {% if page.body_class contains 'home' %}
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc1_qiXmFoFFl8kdv1Tj6n8oZbKg8PEwo&callback=initMap"></script>
+  <script src="/assets/js/tracker.js"></script>
   <script src="/assets/js/home.js"></script>
+  <!-- <script src="/assets/js/form-invite.js"></script> -->
+{% endif %}
+
+{% if page.body_class contains 'tracker' %}
+  <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc1_qiXmFoFFl8kdv1Tj6n8oZbKg8PEwo&callback=initMap"></script>
+  <script src="/assets/js/tracker.js"></script>
   <!-- <script src="/assets/js/form-invite.js"></script> -->
 {% endif %}
 
