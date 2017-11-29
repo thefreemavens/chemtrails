@@ -55,11 +55,11 @@
   line-height: 0;
   width: 100%;
   z-index: 10;
+  background-color: $tfm-light;
   @include media('>phone') {
     max-width: 300px;
     border-radius: 4px;
     box-shadow: 0px 40px 70px 0px rgba(0,0,0,0.28);
-    background-color: $tfm-light;
   }
   .tfm-card-image {
     position: relative;
