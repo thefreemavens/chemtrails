@@ -10,7 +10,7 @@ full_width: true
 ---
 
 <form method="POST" action="https://api.staticman.net/v2/entry/thefreemavens/chemtrails/comments">
-  <input name="options[redirect]" type="hidden" value="https://my-site.com">
+  <input name="options[redirect]" type="hidden" value="https://chemtrails.thefreemavens.org">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <label><input name="fields[name]" type="text">Name</label>
