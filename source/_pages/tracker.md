@@ -9,67 +9,15 @@ body_class: tracker
 full_width: true
 ---
 
-<div id="map"></div>
-
-<form class="js-form form" method="post" action="https://api.staticman.net/v2/entry/thefreemavens/chemtrails/master">
-  <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="text" id="movie-form[name]" name="fields[name]"/>
-      <label class="mdl-textfield__label" for="movie-form[name]">Your name</label>
-    </div>
-  </fieldset>
-
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="text" id="movie-form[title]" name="fields[title]"/>
-      <label class="mdl-textfield__label" for="movie-form[title]">Movie title</label>
-    </div>
-  </fieldset>
-
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield">
-      <textarea class="mdl-textfield__input" name="fields[description]" type="text" rows= "3" id="movie-form[description]"></textarea>
-      <label class="mdl-textfield__label" for="movie-form[description]">Your review. Markdown is allowed.</label>
-    </div>
-  </fieldset>
-
-  <fieldset class="field-group rating-select">
-    <span>Rating:</span>
-    <!-- Rating stars -->
-    <label class="rating-radio-label" for="movie-form[star-1]">
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="1" name="fields[rating]" id="movie-form[star-1]" checked>
-
-    <label class="rating-radio-label" for="movie-form[star-2]">
-      <i class="material-icons rating-star rating-radio-star--off">star_border</i>
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="2" name="fields[rating]" id="movie-form[star-2]">
-
-    <label class="rating-radio-label" for="movie-form[star-3]">
-      <i class="material-icons rating-star rating-radio-star--off">star_border</i>
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="3" name="fields[rating]" id="movie-form[star-3]">
-
-    <label class="rating-radio-label" for="movie-form[star-4]">
-      <i class="material-icons rating-star rating-radio-star--off">star_border</i>
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="4" name="fields[rating]" id="movie-form[star-4]">
-
-    <label class="rating-radio-label" for="movie-form[star-5]">
-      <i class="material-icons rating-star rating-radio-star--off">star_border</i>
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="5" name="fields[rating]" id="movie-form[star-5]">
-  </fieldset>
+<form method="POST" action="https://api.staticman.net/v2/entry/eduardoboucas/thefreemavens/chemtrails/comments">
+  <input name="options[redirect]" type="hidden" value="https://my-site.com">
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <label><input name="fields[name]" type="text">Name</label>
+  <label><input name="fields[email]" type="email">E-mail</label>
+  <label><textarea name="fields[message]"></textarea>Message</label>
   
-  <fieldset class="field-group">
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-      Submit
-    </button>
-  </fieldset>
+  <button type="submit">Go!</button>
 </form>
+
+<div id="map"></div>

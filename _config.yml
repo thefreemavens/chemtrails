@@ -96,9 +96,9 @@ permalink: :categories/:title.html
 # repo: "https://github.com/thefreemavens/org/blob/master/source"
 
 # _config.yml (defaults)
-repository  : "thefreemavens/chemtrails"
-staticman:
-  provider  : "staticman_v2"
-staticman:
-  branch    : "master"
+# repository  : "thefreemavens/chemtrails"
+# staticman:
+#   provider  : "staticman_v2"
+# staticman:
+#   branch    : "master"
 

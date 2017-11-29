@@ -166,11 +166,12 @@
     left: 0;
     position: absolute;
     top: 0;
-    z-index: -1;
 }
 
-.form-js {
-  background: #777;
+form {
+  background: #999;
+  z-index: 200;
+  position: absolute;
 }
 // ==================================================================
 // TFM: Layouts / Home / Preloader
