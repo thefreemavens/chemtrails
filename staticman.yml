@@ -13,7 +13,7 @@
 # different config blocks for different sections of your site.
 # For example, you can have one property to handle comment submission and
 # another one to handle posts.
-comments:
+staticman:
   # (*) REQUIRED
   #
   # Names of the fields the form is allowed to submit. If a field that is
@@ -44,7 +44,7 @@ comments:
   # to be used directly (e.g. a string, number or array)
   generatedFields:
     date:
-      type: date
+      type: "date"
       options:
         format: "iso8601"
 
