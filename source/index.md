@@ -10,6 +10,7 @@ full_width: true
 ---
 
 <div id="map"></div>
+<!-- <div id="info-box">?</div> -->
 
 <div class="tfm-card">
 

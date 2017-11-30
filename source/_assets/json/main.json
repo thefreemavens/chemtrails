@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Juan Dela Cruz",
+        "profile": {
+            "age": 0
+        },
+        "address": {
+            "permanent": {
+                "city": "Quezon city",
+                "state": "Metro Manila"
+            },
+            "current": "Makati city"
+        },
+        "tags": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    {
+        "name": "John Doe",
+        "profile": {
+            "age": 0
+        },
+        "address": {
+            "permanent": {
+                "city": "Puerto Princesa city",
+                "state": "Metro Manila"
+            },
+            "current": "Palawan"
+        },
+        "tags": [
+            "t1",
+            "t2",
+            "t3"
+        ]
+    }
+]

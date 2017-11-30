@@ -1,40 +1,99 @@
 {
   "type": "FeatureCollection",
-  "icon": "resources/icon.png",
-  "features": [{
+  "features": [
+    {
       "type": "Feature",
-      "properties": {
-        "name": "New York",
-        "state": "NY",
-        "country": "U.S.A."
-      },
       "geometry": {
         "type": "Point",
-        "coordinates": [-73.9637404, 40.6418908]
+        "coordinates": [
+          34.806747,
+          32.199093
+        ]
+      },
+      "properties": {
+        "timestamp": "20171129-234754",
+        "file": "https://drive.google.com/open?id=1AHFFsaql_rH_yDE45hQoAGXsKKjAzuB7",
+        "country": "Israel",
+        "city": "Herzliya",
+        "date": "December 6, 2014",
+        "time": "11:35:00 AM",
+        "name": "solRray"
       }
     },
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.852066,
+          32.341566
+        ]
+      },
       "properties": {
+        "timestamp": "20171130-101547",
+        "file": "https://drive.google.com/open?id=1vArJFaEiKmQt2fREXPYzbUpoj8L2ZqvW",
+        "country": "Israel",
+        "city": "Netanya",
+        "date": "November 19, 2014",
+        "time": "4:20:00 PM",
+        "name": "SolRray"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9637404,
+          40.6418908
+        ]
+      },
+      "properties": {
+        "timestamp": "20171130-152539",
+        "file": "https://drive.google.com/open?id=1WdJUB2R9vUN5_hb7yLXp4j9G1EspWdZO",
+        "country": "USA",
+        "city": "New York",
+        "date": "October 12, 2015",
+        "time": "11:23:00 AM",
+        "name": "AdamB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.657593,
+          39.329252
+        ]
+      },
+      "properties": {
+        "timestamp": "20171130-153429",
+        "file": "https://drive.google.com/open?id=1rEbzCIc5xWoBHRA2XbF1cpZV_1ouPEKk",
+        "country": "USA",
         "city": "Atlantic City",
-        "state": "NJ",
-        "country": "U.S.A."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.657593, 39.329252]
+        "date": "October 12, 2015",
+        "time": "11:35:00 AM",
+        "name": "AdamB"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "city": "Miami",
-        "state": "FL",
-        "country": "U.S.A."
-      },
       "geometry": {
         "type": "Point",
-        "coordinates": [-80.227661, 25.883010]
+        "coordinates": [
+          -80.227661,
+          25.88301
+        ]
+      },
+      "properties": {
+        "timestamp": "20171130-153901",
+        "file": "https://drive.google.com/open?id=1SEpBPwQdxk70EzvUDODVeYvdi_-YxWaf",
+        "country": "USA",
+        "city": "Miami",
+        "date": "October 13, 2015",
+        "time": "11:36:00 AM",
+        "name": "AdamB"
       }
     }
   ]

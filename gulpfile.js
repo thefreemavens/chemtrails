@@ -24,6 +24,8 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-ruby-sass');
 var uglify       = require('gulp-uglify');
 var uncss        = require('gulp-uncss');
+var aCsvToJson   = require('gulp-advanced-csv-to-json');
+
 
 // Include local paths helper
 var paths        = require('./source/_assets/gulp/paths');
@@ -201,6 +203,13 @@ gulp.task('build:json', function() {
         .pipe(gulp.dest(paths.siteJsonFiles))
         .pipe(browserSync.stream());
 });
+
+// gulp.task('build:csv', function(){
+//   gulp.src('source/_assets/gulp/csv/**/*.conf')
+//     .pipe(aCsvToJson({
+//        tabSize : 4
+//      }))
+//   });
 
 gulp.task('build:html', function() {
   return gulp.src('docs/**/*.html')
