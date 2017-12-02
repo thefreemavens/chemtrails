@@ -95,6 +95,26 @@
         "time": "11:36:00 AM",
         "name": "AdamB"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.774475,
+          32.100522
+        ]
+      },
+      "properties": {
+        "Timestamp": "20171201-085354",
+        "Upload File": "https://drive.google.com/open?id=1PWMRp87t1m480u3hc6wJt6Ta1x9h7BJv",
+        "Country": "Israel",
+        "State": "",
+        "City": "Tel Aviv",
+        "Date": "November 28, 2017",
+        "Time": "15:33",
+        "Your Name": "Zohary"
+      }
     }
   ]
 }
