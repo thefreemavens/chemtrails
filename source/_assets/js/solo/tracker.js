@@ -1,122 +1,115 @@
 var map;
 var markers = []
 
+function initMap() {
+  map_options = {
+    zoom: 10,
+    center: {lat: 22.821757, lng: -24.433594}, // West Africa
+    // center: {lat: 34.187, lng: -96.679}, // USA zoom 5
+    // center: {lat: 32.093773, lng: 33.420410}, // Israel zoom 9
+    zoom: 3,
+    mapTypeControl: false,
+    disableDefaultUI: true,
+    // streetViewControl: false,
+    styles: [
+      {elementType: 'geometry', stylers: [{color: '#6342FF'}]},
+      {elementType: 'labels.text.stroke', stylers: [{visibility: 'off'}]},
+      {elementType: 'labels.text.fill', stylers: [{color: '#9E98FF'}]},
+      {
+        featureType: 'administrative.locality',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#9E98FF'}]
+      },
+      {
+        featureType: 'administrative.locality',
+        elementType: 'labels.text.stroke',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'poi',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'road',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'transit',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'water',
+        elementType: 'geometry',
+        stylers: [{color: '#4D2CC8'}]
+      }
+    ]
+  }
+  map_document  = document.getElementById('map');
+  map           = new google.maps.Map(map_document,map_options);
+  setMarkers();
+}
+
 // after the geojson is loaded, iterate through the map data to create markers
 // and add the pop up (info) windows
 function setMarkers() {
-  console.log('creating markers');
+  // console.log('creating markers');
   var infoWindow = new google.maps.InfoWindow();
+  
   geojson_url = 'assets/json/google.json';
   $.getJSON(geojson_url, function(result) {
-      // Post select to url.
-      data = result['features']
-      $.each(data, function(key, val) {
-        var country = val['properties']['country'];
-        var state   = val['properties']['state'];
-        var city    = val['properties']['city'];
-        var date    = val['properties']['date'];
-        var photo   = val['properties']['photo'];
-        var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSft4yPbSHeeG6GCopPI2CnIW4s98VqDfB_GH0qtHMW9lpm-xA/viewform'
-        var icon    = { url: '/assets/images/icons/my-marker-l.png' };
-        var point   = new google.maps.LatLng(parseFloat(val['geometry']['coordinates'][1]), parseFloat(val['geometry']['coordinates'][0]));
-        var marker  = new google.maps.Marker({
-          position: point,
-          title: country,
-          map: map,
-          icon: icon,
-          properties: val['properties']
-         });
+      
+    data = result['features'];
+    $.each(data, function(key, val) {
 
-        var ctData =
-          // '<div><h3>' + country + ' ' + city + ', on ' + date + '</h3></div>' +
-          // '<div><h3>' + country + ' ' + city + ', on ' + date + '</h3></div>' +
-
-          '<div class="tfm-card-image">' +
-            '<a class="tfm-add-icon" href="' + formUrl + '" target="_blank">' +
-            '<div class="tfm-add-icon-inner">' +
-              '<span></span>' +
-              '<span></span>' +
-            '</div>' +
-            '</a>' +
-            '<div class="tfm-photo">' +
-              '<img src="' + photo + '">' +
-            '</div>' +
-          '</div>' +
-
-          '<main>' +
-            '<h1>' + city + ', ' + state +'</h1>' +
-            '<h2>' + date + '</h2>' +
-            '<a href="#" class="tfm-counter">32</a>' +
-            '<footer>' +
-              '<hr>' +
-              '<h3>' + point + '</h3>' +
-            '</footer>' +
-          '</main>;';
-
-
-        marker.addListener('click', function() {
-          // $('.modal').css('display', 'initial');
-          $('.tfm-card').html(ctData)
-        });
-        markers.push(marker)
-        
+      var country = val['properties']['country'];
+      var state   = val['properties']['state'];
+      var city    = val['properties']['city'];
+      var date    = val['properties']['date'];
+      var photo   = val['properties']['photo'];
+      var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSft4yPbSHeeG6GCopPI2CnIW4s98VqDfB_GH0qtHMW9lpm-xA/viewform'
+      var icon    = { url: '/assets/images/icons/my-marker-l.png' };
+      var lat     = val['geometry']['coordinates'][1];
+      var lng     = val['geometry']['coordinates'][0];
+      var point   = new google.maps.LatLng(val['geometry']['coordinates'][1], val['geometry']['coordinates'][0]);
+      
+      var marker  = new google.maps.Marker({
+        position: point,
+        title: country,
+        map: map,
+        icon: icon,
+        properties: val['properties']
       });
-  });
 
-  $('.modal').click(function() {
-    $('.modal').css('display', 'none');
-    // $('#content').remove();
-  });
-}
+      var ctData =
+        '<div class="tfm-card-image">' +
+          '<a class="tfm-add-icon" href="' + formUrl + '" target="_blank">' +
+          '<div class="tfm-add-icon-inner">' +
+            '<span></span>' +
+            '<span></span>' +
+          '</div>' +
+          '</a>' +
+          '<div class="tfm-photo" style="background-image: url(' + photo + ');">' +
+            // '<img src="' + photo + '">' +
+          '</div>' +
+        '</div>' +
 
-function initMap() {
-    map_options = {
-      zoom: 10,
-      center: {lat: 22.821757, lng: -24.433594}, // West Africa
-      // center: {lat: 34.187, lng: -96.679}, // USA zoom 5
-      // center: {lat: 32.093773, lng: 33.420410}, // Israel zoom 9
-      zoom: 3,
-      mapTypeControl: false,
-      disableDefaultUI: true,
-      // streetViewControl: false,
-      styles: [
-        {elementType: 'geometry', stylers: [{color: '#6342FF'}]},
-        {elementType: 'labels.text.stroke', stylers: [{visibility: 'off'}]},
-        {elementType: 'labels.text.fill', stylers: [{color: '#9E98FF'}]},
-        {
-          featureType: 'administrative.locality',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#9E98FF'}]
-        },
-        {
-          featureType: 'administrative.locality',
-          elementType: 'labels.text.stroke',
-          stylers: [{visibility: 'off'}]
-        },
-        {
-          featureType: 'poi',
-          stylers: [{visibility: 'off'}]
-        },
-        {
-          featureType: 'road',
-          stylers: [{visibility: 'off'}]
-        },
-        {
-          featureType: 'transit',
-          stylers: [{visibility: 'off'}]
-        },
-        {
-          featureType: 'water',
-          elementType: 'geometry',
-          stylers: [{color: '#4D2CC8'}]
-        }
-      ]
-    }
-    
-    map_document = document.getElementById('map')
-    map = new google.maps.Map(map_document,map_options);
-    setMarkers()
- 
+        '<main>' +
+          '<h1>' + city + ', ' + state +'</h1>' +
+          '<h2>' + date + '</h2>' +
+          '<a href="#" class="tfm-counter">32</a>' +
+          '<footer>' +
+            '<hr>' +
+            '<h3>' + lat + ', ' + lng + '</h3>' +
+          '</footer>' +
+        '</main>;';
+
+      marker.addListener('click', function() {
+        // $('.modal').css('display', 'initial');
+        $('.tfm-card').html(ctData)
+      });
+      markers.push(marker)       
+    });
+  });
 }
 
 // google.maps.event.addDomListener(window, 'load', initMap);
