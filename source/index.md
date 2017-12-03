@@ -9,6 +9,9 @@ body_class: home bm
 full_width: true
 ---
 
+<div class="modal">
+  
+</div>
 <div id="map"></div>
 <!-- <div id="info-box">?</div> -->
 

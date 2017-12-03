@@ -6,75 +6,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.806747,
-          32.199093
+          34.774475,
+          32.100522
         ]
       },
       "properties": {
-        "timestamp": "20171129-234754",
-        "file": "https://drive.google.com/open?id=1AHFFsaql_rH_yDE45hQoAGXsKKjAzuB7",
+        "id": "20171201-085354",
         "country": "Israel",
-        "city": "Herzliya",
-        "date": "December 6, 2014",
-        "time": "11:35:00 AM",
-        "name": "solRray"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.852066,
-          32.341566
-        ]
-      },
-      "properties": {
-        "timestamp": "20171130-101547",
-        "file": "https://drive.google.com/open?id=1vArJFaEiKmQt2fREXPYzbUpoj8L2ZqvW",
-        "country": "Israel",
-        "city": "Netanya",
-        "date": "November 19, 2014",
-        "time": "4:20:00 PM",
-        "name": "SolRray"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9637404,
-          40.6418908
-        ]
-      },
-      "properties": {
-        "timestamp": "20171130-152539",
-        "file": "https://drive.google.com/open?id=1WdJUB2R9vUN5_hb7yLXp4j9G1EspWdZO",
-        "country": "USA",
-        "city": "New York",
-        "date": "October 12, 2015",
-        "time": "11:23:00 AM",
-        "name": "AdamB"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.657593,
-          39.329252
-        ]
-      },
-      "properties": {
-        "timestamp": "20171130-153429",
-        "file": "https://drive.google.com/open?id=1rEbzCIc5xWoBHRA2XbF1cpZV_1ouPEKk",
-        "country": "USA",
-        "city": "Atlantic City",
-        "date": "October 12, 2015",
-        "time": "11:35:00 AM",
-        "name": "AdamB"
+        "state": "",
+        "city": "Tel Aviv",
+        "date": "November 28, 2017",
+        "time": "15:33",
+        "name": "Zohary",
+        "file": "20171201-1533-israel-tel-aviv-zohary",
+        "photo": "https://drive.google.com/uc?id=1PWMRp87t1m480u3hc6wJt6Ta1x9h7BJv"
       }
     },
     {
@@ -87,13 +32,15 @@
         ]
       },
       "properties": {
-        "timestamp": "20171130-153901",
-        "file": "https://drive.google.com/open?id=1SEpBPwQdxk70EzvUDODVeYvdi_-YxWaf",
+        "id": "20171130-153901",
         "country": "USA",
+        "state": "FL",
         "city": "Miami",
         "date": "October 13, 2015",
-        "time": "11:36:00 AM",
-        "name": "AdamB"
+        "time": "11:36",
+        "name": "AdamB",
+        "file": "20171130-1136-usa-fl-miami-adamb",
+        "photo": "https://drive.google.com/uc?id=1SEpBPwQdxk70EzvUDODVeYvdi_-YxWaf"
       }
     },
     {
@@ -101,19 +48,83 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.774475,
-          32.100522
+          -74.657593,
+          39.329252
         ]
       },
       "properties": {
-        "Timestamp": "20171201-085354",
-        "Upload File": "https://drive.google.com/open?id=1PWMRp87t1m480u3hc6wJt6Ta1x9h7BJv",
-        "Country": "Israel",
-        "State": "",
-        "City": "Tel Aviv",
-        "Date": "November 28, 2017",
-        "Time": "15:33",
-        "Your Name": "Zohary"
+        "id": "20171130-153429",
+        "country": "USA",
+        "state": "NJ",
+        "city": "Atlantic City",
+        "date": "October 12, 2015",
+        "time": "11:35",
+        "name": "AdamB",
+        "file": "20171130-1135-usa-nj-atlantic-city-adamb",
+        "photo": "https://drive.google.com/uc?id=1rEbzCIc5xWoBHRA2XbF1cpZV_1ouPEKk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9637404,
+          40.6418908
+        ]
+      },
+      "properties": {
+        "id": "20171130-152539",
+        "country": "USA",
+        "state": "NY",
+        "city": "New York",
+        "date": "October 12, 2015",
+        "time": "11:23",
+        "name": "AdamB",
+        "file": "20171130-1123-usa-ny-new-york-adamb",
+        "photo": "https://drive.google.com/uc?id=1WdJUB2R9vUN5_hb7yLXp4j9G1EspWdZO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.852066,
+          32.341566
+        ]
+      },
+      "properties": {
+        "id": "20171130-101547",
+        "country": "Israel",
+        "state": "",
+        "city": "Netanya",
+        "date": "November 19, 2014",
+        "time": "16:20",
+        "name": "SolRray",
+        "file": "20171130-1620-israel-netanya-solrray",
+        "photo": "https://drive.google.com/uc?id=1vArJFaEiKmQt2fREXPYzbUpoj8L2ZqvW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.806747,
+          32.199093
+        ]
+      },
+      "properties": {
+        "id": "20171129-234754",
+        "country": "Israel",
+        "state": "",
+        "city": "Herzliya",
+        "date": "December 6, 2014",
+        "time": "11:35",
+        "name": "solRray",
+        "file": "20171129-1135-israel-herzliya-solrray",
+        "photo": "https://drive.google.com/uc?id=1AHFFsaql_rH_yDE45hQoAGXsKKjAzuB7"
       }
     }
   ]

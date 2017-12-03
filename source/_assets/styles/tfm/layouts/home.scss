@@ -160,7 +160,7 @@
 // }
 
 // Add Google Maps
-#map {
+#map, .modal {
     height: 100%;
     width: 100%;
     left: 0;
@@ -174,15 +174,21 @@ form {
   position: absolute;
 }
 
-// #info-box {
-//   background-color: white;
-//   border: 1px solid black;
-//   bottom: 30px;
-//   height: 20px;
-//   padding: 10px;
-//   position: absolute;
-//   left: 30px;
-// }
+.modal {
+  display: none;
+  z-index: 100;
+  background: $tfm-light;
+}
+
+.tfm-photo {
+  width: 300px;
+  height: 300px;
+  img {
+    height: 100%;
+  }
+}
+
+
 // ==================================================================
 // TFM: Layouts / Home / Preloader
 //
