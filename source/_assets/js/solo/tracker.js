@@ -111,7 +111,7 @@ function setMarkers() {
 
       marker.addListener('click', function() {
         // $('.modal').css('display', 'initial');
-        $('.tfm-card').html(ctData)
+        $('.tfm-card').addClass('show').html(ctData);
       });
       markers.push(marker)
       // drop();       

@@ -15,15 +15,24 @@ full_width: true
 <div id="map"></div>
 <!-- <div id="info-box">?</div> -->
 
-<div class="tfm-card">
 
+<!-- <div>
+  <a class="tfm-add-icon" href="https://docs.google.com/forms/d/e/1FAIpQLSft4yPbSHeeG6GCopPI2CnIW4s98VqDfB_GH0qtHMW9lpm-xA/viewform?usp=sf_link" target="_blank">
+    <div class="tfm-add-icon-inner">
+      <span></span>
+      <span></span>
+    </div>
+  </a>
+</div> -->
+
+<div class="tfm-card">
+  <a class="tfm-add-icon" href="https://docs.google.com/forms/d/e/1FAIpQLSft4yPbSHeeG6GCopPI2CnIW4s98VqDfB_GH0qtHMW9lpm-xA/viewform?usp=sf_link" target="_blank">
+    <div class="tfm-add-icon-inner">
+      <span></span>
+      <span></span>
+    </div>
+  </a>
   <div class="tfm-card-image">
-    <a class="tfm-add-icon" href="https://docs.google.com/forms/d/e/1FAIpQLSft4yPbSHeeG6GCopPI2CnIW4s98VqDfB_GH0qtHMW9lpm-xA/viewform?usp=sf_link" target="_blank">
-      <div class="tfm-add-icon-inner">
-        <span></span>
-        <span></span>
-      </div>
-    </a>
     <img src="/assets/images/tfm-ct-logo-card-x2.png">
   </div>
 
