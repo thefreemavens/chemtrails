@@ -3,11 +3,13 @@ var markers = []
 
 function initMap() {
   map_options = {
-    zoom: 10,
+    // zoom: 10,
     center: {lat: 22.821757, lng: -24.433594}, // West Africa
     // center: {lat: 34.187, lng: -96.679}, // USA zoom 5
     // center: {lat: 32.093773, lng: 33.420410}, // Israel zoom 9
     zoom: 3,
+    minZoom: 2,
+    maxZoom: 15,
     mapTypeControl: false,
     disableDefaultUI: true,
     // streetViewControl: false,
