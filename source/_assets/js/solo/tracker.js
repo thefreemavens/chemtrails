@@ -63,6 +63,7 @@ function setMarkers() {
 
       var country = val['properties']['country'];
       var state   = val['properties']['state'];
+      var cors    = ((state.length != 0) ? state : country);
       var city    = val['properties']['city'];
       var date    = val['properties']['date'];
       var photo   = val['properties']['photo'];
@@ -94,7 +95,7 @@ function setMarkers() {
         '</div>' +
 
         '<main>' +
-          '<h1>' + city + ', ' + state +'</h1>' +
+          '<h1>' + city + ', ' + cors +'</h1>' +
           '<h2>' + date + '</h2>' +
           '<a href="#" class="tfm-counter">32</a>' +
           '<footer>' +
@@ -110,6 +111,15 @@ function setMarkers() {
       markers.push(marker)       
     });
   });
+}
+
+function isUSA(){
+  if (state != null) {
+    val['properties']['state'];
+  }
+  else {
+
+  }
 }
 
 // google.maps.event.addDomListener(window, 'load', initMap);
