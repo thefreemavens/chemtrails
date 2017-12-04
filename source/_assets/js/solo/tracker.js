@@ -59,11 +59,13 @@ function setMarkers() {
   $.getJSON(geojson_url, function(result) {
       
     data = result['features'];
+    var counter = data.length;
+    $('.tfm-counter').html(counter);
     $.each(data, function(key, val) {
 
       var country = val['properties']['country'];
       var state   = val['properties']['state'];
-      var cors    = ((state.length != 0) ? state : country);
+      var cors    = ((state.length != 0) ? state : country); // Country or State 
       var city    = val['properties']['city'];
       var date    = val['properties']['date'];
       var photo   = val['properties']['photo'];
@@ -97,7 +99,7 @@ function setMarkers() {
         '<main>' +
           '<h1>' + city + ', ' + cors +'</h1>' +
           '<h2>' + date + '</h2>' +
-          '<a href="#" class="tfm-counter">32</a>' +
+          '<a href="#" class="tfm-counter">' + counter + '</a>' +
           '<footer>' +
             '<hr>' +
             '<h3>' + lat + ', ' + lng + '</h3>' +
@@ -113,14 +115,10 @@ function setMarkers() {
   });
 }
 
-function isUSA(){
-  if (state != null) {
-    val['properties']['state'];
-  }
-  else {
+// $(document).ready(function() {
+//   $('.tfm-counter').html(setMarkers(counter));  
+// })
 
-  }
-}
 
 // google.maps.event.addDomListener(window, 'load', initMap);
 
