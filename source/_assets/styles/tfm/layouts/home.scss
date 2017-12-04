@@ -40,6 +40,7 @@
   line-height: 0;
   // width: 100%;
   z-index: 10;
+  opacity: 1;
   max-width: 300px;
   border-radius: 4px;
   box-shadow: 0px 40px 70px 0px rgba(0,0,0,0.33);
@@ -188,10 +189,12 @@ form {
 }
 
 .show {
+  opacity: 1;
   animation: fadein 0.5s;
 }
 
 .hide {
+  opacity: 0;
   animation: fadeout 0.5s;
 }
 

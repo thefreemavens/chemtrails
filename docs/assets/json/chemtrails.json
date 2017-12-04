@@ -126,6 +126,27 @@
         "file": "20171129-1135-israel-herzliya-solrray",
         "photo": "https://drive.google.com/uc?id=1AHFFsaql_rH_yDE45hQoAGXsKKjAzuB7"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.799538,
+          32.09485
+        ]
+      },
+      "properties": {
+        "id": "20171204-171217",
+        "country": "Israel",
+        "state": "",
+        "city": "Tel Aviv",
+        "date": "December 4, 2017",
+        "time": "15:03",
+        "name": "SophieA",
+        "file": "20171204-1503-israel-tel-aviv-sophiea",
+        "photo": "https://drive.google.com/uc?id=1T2kKCFypXMJjD--IxrDRivtolITIxRzA"
+      }
     }
   ]
 }

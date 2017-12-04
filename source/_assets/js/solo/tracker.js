@@ -56,7 +56,7 @@ function setMarkers() {
   // console.log('creating markers');
   var infoWindow = new google.maps.InfoWindow();
   
-  geojson_url = 'assets/json/google.json';
+  geojson_url = 'assets/json/chemtrails.json';
   $.getJSON(geojson_url, function(result) {
       
     data = result['features'];
@@ -110,10 +110,20 @@ function setMarkers() {
         '</main>;';
 
       marker.addListener('click', function() {
-        // $('.modal').css('display', 'initial');
-        $('.tfm-card').addClass('show').html(ctData);
+        // map.setZoom(8);
+        // map.setCenter(marker.getPosition());
+        // $('.tfm-card').removeClass('show').delay(5000);
+        // $('.tfm-card').addClass('hide').delay(5000);
+        $('.tfm-card').html(ctData);
       });
-      markers.push(marker)
+
+      map.addListener('idle', function() {
+        // window.setTimeout(function() {
+        //   $('.tfm-card').removeClass('show');
+        // }, 10000);
+      });
+
+      markers.push(marker);
       // drop();       
     });
   });
