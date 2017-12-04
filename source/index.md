@@ -33,7 +33,7 @@ full_width: true
     <a href="#" class="tfm-counter">32</a>
     <footer>
       <hr>
-      <h3>Ver. 0.1.0-Beta</h3>
+      <h3>Ver. 0.2.0-Beta</h3>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSft4yPbSHeeG6GCopPI2CnIW4s98VqDfB_GH0qtHMW9lpm-xA/viewform?usp=sf_link" target="_blank">
         {% include _icons/google-plus.svg %}
       </a>

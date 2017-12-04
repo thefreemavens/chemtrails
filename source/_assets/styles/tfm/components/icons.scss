@@ -23,15 +23,20 @@
   height: 52px;
   display: block;
   border-radius: 100px;
-  position: absolute;
-  bottom: -25px;
-  right: 25px;
+  // position: absolute;
+  position: fixed;
+  // bottom: -25px;
+  // right: 25px;
+  top: 33px;
+  right: 33px;
   box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.22);
   background: $tfm-alert-dark;
   @include media('>phone') {
-    top: -25px;
-    right: -25px;
-    background: $tfm-alert;
+    // top: -25px;
+    // right: -25px;
+    // top: 25px;
+    // right: 25px;
+    background: $tfm-alert-dark;
   }
 }
 

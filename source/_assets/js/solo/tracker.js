@@ -47,6 +47,7 @@ function initMap() {
   map_document  = document.getElementById('map');
   map           = new google.maps.Map(map_document,map_options);
   setMarkers();
+  // $('#map').addClass('show');
 }
 
 // after the geojson is loaded, iterate through the map data to create markers
@@ -59,8 +60,10 @@ function setMarkers() {
   $.getJSON(geojson_url, function(result) {
       
     data = result['features'];
+
     var counter = data.length;
     $('.tfm-counter').html(counter);
+    
     $.each(data, function(key, val) {
 
       var country = val['properties']['country'];
@@ -110,10 +113,30 @@ function setMarkers() {
         // $('.modal').css('display', 'initial');
         $('.tfm-card').html(ctData)
       });
-      markers.push(marker)       
+      markers.push(marker)
+      // drop();       
     });
   });
 }
+
+
+// function drop() {
+//   clearMarkers();
+//   for (var i = 0; i < data.length; i++) {
+//     addMarkerWithTimeout(data[i], i * 200);
+//   }
+// }
+
+// function addMarkerWithTimeout(position, timeout) {
+//   window.setTimeout(function() {
+//     markers.push(new google.maps.Marker({
+//       position: point,
+//       map: map,
+//       animation: google.maps.Animation.DROP
+//     }));
+//   }, timeout);
+// }
+
 
 // $(document).ready(function() {
 //   $('.tfm-counter').html(setMarkers(counter));  
