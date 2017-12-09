@@ -11,15 +11,16 @@
         ]
       },
       "properties": {
-        "id": "20171201-085354",
-        "country": "Israel",
-        "state": "",
-        "city": "Tel Aviv",
-        "date": "November 28, 2017",
-        "time": "15:33",
-        "name": "Zohary",
-        "file": "20171201-1533-israel-tel-aviv-zohary",
-        "photo": "https://drive.google.com/uc?id=1PWMRp87t1m480u3hc6wJt6Ta1x9h7BJv"
+        "Timestamp": "20171201-085354",
+        "Photo": "https://drive.google.com/open?id=1PWMRp87t1m480u3hc6wJt6Ta1x9h7BJv",
+        "Country": "Israel",
+        "State": "",
+        "City": "Tel Aviv",
+        "Date": "November 28, 2017",
+        "Time": "15:33",
+        "Name": "Zohary",
+        "File": "20171201-1533-israel-tel-aviv-zohary",
+        "imgsrc": "https://drive.google.com/uc?id=1PWMRp87t1m480u3hc6wJt6Ta1x9h7BJv"
       }
     },
     {
@@ -32,15 +33,16 @@
         ]
       },
       "properties": {
-        "id": "20171130-153901",
-        "country": "USA",
-        "state": "FL",
-        "city": "Miami",
-        "date": "October 13, 2015",
-        "time": "11:36",
-        "name": "AdamB",
-        "file": "20171130-1136-usa-fl-miami-adamb",
-        "photo": "https://drive.google.com/uc?id=1SEpBPwQdxk70EzvUDODVeYvdi_-YxWaf"
+        "Timestamp": "20171130-153901",
+        "Photo": "https://drive.google.com/open?id=1SEpBPwQdxk70EzvUDODVeYvdi_-YxWaf",
+        "Country": "USA",
+        "State": "FL",
+        "City": "Miami",
+        "Date": "October 13, 2015",
+        "Time": "11:36",
+        "Name": "AdamB",
+        "File": "20171130-1136-usa-fl-miami-adamb",
+        "imgsrc": "https://drive.google.com/uc?id=1SEpBPwQdxk70EzvUDODVeYvdi_-YxWaf"
       }
     },
     {
@@ -53,15 +55,16 @@
         ]
       },
       "properties": {
-        "id": "20171130-153429",
-        "country": "USA",
-        "state": "NJ",
-        "city": "Atlantic City",
-        "date": "October 12, 2015",
-        "time": "11:35",
-        "name": "AdamB",
-        "file": "20171130-1135-usa-nj-atlantic-city-adamb",
-        "photo": "https://drive.google.com/uc?id=1rEbzCIc5xWoBHRA2XbF1cpZV_1ouPEKk"
+        "Timestamp": "20171130-153429",
+        "Photo": "https://drive.google.com/open?id=1rEbzCIc5xWoBHRA2XbF1cpZV_1ouPEKk",
+        "Country": "USA",
+        "State": "NJ",
+        "City": "Atlantic City",
+        "Date": "October 12, 2015",
+        "Time": "11:35",
+        "Name": "AdamB",
+        "File": "20171130-1135-usa-nj-atlantic-city-adamb",
+        "imgsrc": "https://drive.google.com/uc?id=1rEbzCIc5xWoBHRA2XbF1cpZV_1ouPEKk"
       }
     },
     {
@@ -74,15 +77,16 @@
         ]
       },
       "properties": {
-        "id": "20171130-152539",
-        "country": "USA",
-        "state": "NY",
-        "city": "New York",
-        "date": "October 12, 2015",
-        "time": "11:23",
-        "name": "AdamB",
-        "file": "20171130-1123-usa-ny-new-york-adamb",
-        "photo": "https://drive.google.com/uc?id=1WdJUB2R9vUN5_hb7yLXp4j9G1EspWdZO"
+        "Timestamp": "20171130-152539",
+        "Photo": "https://drive.google.com/open?id=1WdJUB2R9vUN5_hb7yLXp4j9G1EspWdZO",
+        "Country": "USA",
+        "State": "NY",
+        "City": "New York",
+        "Date": "October 12, 2015",
+        "Time": "11:23",
+        "Name": "AdamB",
+        "File": "20171130-1123-usa-ny-new-york-adamb",
+        "imgsrc": "https://drive.google.com/uc?id=1WdJUB2R9vUN5_hb7yLXp4j9G1EspWdZO"
       }
     },
     {
@@ -95,15 +99,16 @@
         ]
       },
       "properties": {
-        "id": "20171130-101547",
-        "country": "Israel",
-        "state": "",
-        "city": "Netanya",
-        "date": "November 19, 2014",
-        "time": "16:20",
-        "name": "SolRray",
-        "file": "20171130-1620-israel-netanya-solrray",
-        "photo": "https://drive.google.com/uc?id=1vArJFaEiKmQt2fREXPYzbUpoj8L2ZqvW"
+        "Timestamp": "20171130-101547",
+        "Photo": "https://drive.google.com/open?id=1vArJFaEiKmQt2fREXPYzbUpoj8L2ZqvW",
+        "Country": "Israel",
+        "State": "",
+        "City": "Netanya",
+        "Date": "November 19, 2014",
+        "Time": "16:20",
+        "Name": "SolRray",
+        "File": "20171130-1620-israel-netanya-solrray",
+        "imgsrc": "https://drive.google.com/uc?id=1vArJFaEiKmQt2fREXPYzbUpoj8L2ZqvW"
       }
     },
     {
@@ -116,15 +121,16 @@
         ]
       },
       "properties": {
-        "id": "20171129-234754",
-        "country": "Israel",
-        "state": "",
-        "city": "Herzliya",
-        "date": "December 6, 2014",
-        "time": "11:35",
-        "name": "solRray",
-        "file": "20171129-1135-israel-herzliya-solrray",
-        "photo": "https://drive.google.com/uc?id=1AHFFsaql_rH_yDE45hQoAGXsKKjAzuB7"
+        "Timestamp": "20171129-234754",
+        "Photo": "https://drive.google.com/open?id=1AHFFsaql_rH_yDE45hQoAGXsKKjAzuB7",
+        "Country": "Israel",
+        "State": "",
+        "City": "Herzliya",
+        "Date": "December 6, 2014",
+        "Time": "11:35",
+        "Name": "solRray",
+        "File": "20171129-1135-israel-herzliya-solrray",
+        "imgsrc": "https://drive.google.com/uc?id=1AHFFsaql_rH_yDE45hQoAGXsKKjAzuB7"
       }
     },
     {
@@ -137,15 +143,38 @@
         ]
       },
       "properties": {
-        "id": "20171204-171217",
-        "country": "Israel",
-        "state": "",
-        "city": "Tel Aviv",
-        "date": "December 4, 2017",
-        "time": "15:03",
-        "name": "SophieA",
-        "file": "20171204-1503-israel-tel-aviv-sophiea",
-        "photo": "https://drive.google.com/uc?id=1T2kKCFypXMJjD--IxrDRivtolITIxRzA"
+        "Timestamp": "20171204-171217",
+        "Photo": "https://drive.google.com/open?id=1T2kKCFypXMJjD--IxrDRivtolITIxRzA",
+        "Country": "Israel",
+        "State": "",
+        "City": "Tel Aviv",
+        "Date": "December 4, 2017",
+        "Time": "15:03",
+        "Name": "SophieA",
+        "File": "20171204-1503-israel-tel-aviv-sophiea",
+        "imgsrc": "https://drive.google.com/uc?id=1T2kKCFypXMJjD--IxrDRivtolITIxRzA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.326202,
+          33.662337
+        ]
+      },
+      "properties": {
+        "Timestamp": "20171209-190828",
+        "Photo": "https://drive.google.com/open?id=11G-mMLNBTzl7-952pfJyu1f2jh35-2pW",
+        "Country": "United States of America",
+        "State": "CA",
+        "City": "Lake Elsinore",
+        "Date": "December 9, 2017",
+        "Time": "09:07",
+        "Name": "MikeH",
+        "File": "20171209-0907-united-states-of-america-lake-elsinore-mikeh",
+        "imgsrc": "https://drive.google.com/uc?id=11G-mMLNBTzl7-952pfJyu1f2jh35-2pW"
       }
     }
   ]
