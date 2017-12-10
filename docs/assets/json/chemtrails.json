@@ -210,6 +210,27 @@
         "file": "20171210-1414-usa-queen-creek-dawnnj",
         "photo": "https://drive.google.com/uc?id=1xNb-9r1xRCYvj1cLSntiS7zydthb3tjY"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.781768,
+          32.0853
+        ]
+      },
+      "properties": {
+        "id": "20171210-115512",
+        "country": "Israel",
+        "state": "IL",
+        "city": "Tel-Aviv",
+        "date": "December 10, 2017",
+        "time": "11:50",
+        "name": "SophieA",
+        "file": "20171210-1150-israel-tel-aviv-sophiea",
+        "photo": "https://drive.google.com/uc?id=1PQV6mHzl12P7LsXUlMBycDr9aqzaJ_FZ"
+      }
     }
   ]
 }
