@@ -18,7 +18,7 @@
         "date": "November 28, 2017",
         "time": "15:33",
         "name": "Zohary",
-        "file": "20171201-1533-israel-tel-aviv-zohary",
+        "file": "20171201-1533-israel-tel-aviv-zohary.jpg",
         "photo": "https://drive.google.com/uc?id=1PWMRp87t1m480u3hc6wJt6Ta1x9h7BJv"
       }
     },
@@ -39,7 +39,7 @@
         "date": "October 13, 2015",
         "time": "11:36",
         "name": "AdamB",
-        "file": "20171130-1136-usa-fl-miami-adamb",
+        "file": "20171130-1136-usa-miami-adamb.jpg",
         "photo": "https://drive.google.com/uc?id=1SEpBPwQdxk70EzvUDODVeYvdi_-YxWaf"
       }
     },
@@ -60,7 +60,7 @@
         "date": "October 12, 2015",
         "time": "11:35",
         "name": "AdamB",
-        "file": "20171130-1135-usa-nj-atlantic-city-adamb",
+        "file": "20171130-1135-usa-atlantic-city-adamb.jpg",
         "photo": "https://drive.google.com/uc?id=1rEbzCIc5xWoBHRA2XbF1cpZV_1ouPEKk"
       }
     },
@@ -81,7 +81,7 @@
         "date": "October 12, 2015",
         "time": "11:23",
         "name": "AdamB",
-        "file": "20171130-1123-usa-ny-new-york-adamb",
+        "file": "20171130-1123-usa-new-york-adamb.jpg",
         "photo": "https://drive.google.com/uc?id=1WdJUB2R9vUN5_hb7yLXp4j9G1EspWdZO"
       }
     },
@@ -102,7 +102,7 @@
         "date": "November 19, 2014",
         "time": "16:20",
         "name": "SolRray",
-        "file": "20171130-1620-israel-netanya-solrray",
+        "file": "20171130-1620-israel-netanya-solrray.jpg",
         "photo": "https://drive.google.com/uc?id=1vArJFaEiKmQt2fREXPYzbUpoj8L2ZqvW"
       }
     },
@@ -123,7 +123,7 @@
         "date": "December 6, 2014",
         "time": "11:35",
         "name": "solRray",
-        "file": "20171129-1135-israel-herzliya-solrray",
+        "file": "20171129-1135-israel-herzliya-solrray.jpg",
         "photo": "https://drive.google.com/uc?id=1AHFFsaql_rH_yDE45hQoAGXsKKjAzuB7"
       }
     },
@@ -144,7 +144,7 @@
         "date": "December 4, 2017",
         "time": "15:03",
         "name": "SophieA",
-        "file": "20171204-1503-israel-tel-aviv-sophiea",
+        "file": "20171204-1503-israel-tel-aviv-sophiea.jpg",
         "photo": "https://drive.google.com/uc?id=1T2kKCFypXMJjD--IxrDRivtolITIxRzA"
       }
     },
@@ -165,7 +165,7 @@
         "date": "December 9, 2017",
         "time": "09:07",
         "name": "MikeH",
-        "file": "20171209-0907-usa-lake-elsinore-mikeh",
+        "file": "20171209-0907-usa-lake-elsinore-mikeh.jpg",
         "photo": "https://drive.google.com/uc?id=11G-mMLNBTzl7-952pfJyu1f2jh35-2pW"
       }
     },
@@ -186,7 +186,7 @@
         "date": "December 9, 2017",
         "time": "10:20",
         "name": "RyanC",
-        "file": "20171209-1020-usa-ventura-ryanc",
+        "file": "20171209-1020-usa-ventura-ryanc.jpg",
         "photo": "https://drive.google.com/uc?id=1nza5RofTFnmj7VZpUiBS_x-2ql1oz6p5"
       }
     },
@@ -207,7 +207,7 @@
         "date": "December 9, 2017",
         "time": "14:14",
         "name": "DawnNJ",
-        "file": "20171210-1414-usa-queen-creek-dawnnj",
+        "file": "20171210-1414-usa-queen-creek-dawnnj.jpg",
         "photo": "https://drive.google.com/uc?id=1xNb-9r1xRCYvj1cLSntiS7zydthb3tjY"
       }
     },
@@ -223,13 +223,34 @@
       "properties": {
         "id": "20171210-115512",
         "country": "Israel",
-        "state": "IL",
+        "state": "",
         "city": "Tel-Aviv",
         "date": "December 10, 2017",
         "time": "11:50",
         "name": "SophieA",
-        "file": "20171210-1150-israel-tel-aviv-sophiea",
+        "file": "20171210-1150-israel-tel-aviv-sophiea.jpg",
         "photo": "https://drive.google.com/uc?id=1PQV6mHzl12P7LsXUlMBycDr9aqzaJ_FZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.764825,
+          32.076671
+        ]
+      },
+      "properties": {
+        "id": "20171210-201219",
+        "country": "Israel",
+        "state": "",
+        "city": "Tel Aviv ",
+        "date": "December 10, 2017",
+        "time": "12:00",
+        "name": "Neta",
+        "file": "20171210-1200-israel-tel-aviv--neta.jpg",
+        "photo": "https://drive.google.com/uc?id=1kM2J1d7PKmhGEUxMmBHH3Ns5DVjL6dBE"
       }
     }
   ]
