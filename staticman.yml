@@ -1,5 +1,7 @@
 # staticman.yml (defaults)
 comments:
+  repository         : "thefreemavens/chemtrails"
+  provider           : "staticman_v2"
   allowedFields      : ["name", "email", "url", "message"]
   branch             : "master"
   commitMessage      : "New comment"
@@ -7,9 +9,9 @@ comments:
   format             : "yaml"
   generatedFields:
     date:
-      type           : date
+      type           : "date"
       options:
-        format       : "timestamp-seconds"
+        format       : "iso8601"
   moderation         : true
   path               : "source/_data/comments/{fields.name}" (default)
   requiredFields     : ["name", "email", "message"]
