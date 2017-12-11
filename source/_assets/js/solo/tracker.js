@@ -73,6 +73,7 @@ function setMarkers() {
       var cors    = ((state.length != 0) ? state : country); // Country or State 
       var city    = val['properties']['city'];
       var date    = val['properties']['date'];
+      var time    = val['properties']['time'];
       var photo   = val['properties']['photo'];
       var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSft4yPbSHeeG6GCopPI2CnIW4s98VqDfB_GH0qtHMW9lpm-xA/viewform'
       var icon    = { url: '/assets/images/icons/my-marker-l.png' };
@@ -103,7 +104,7 @@ function setMarkers() {
 
         '<main>' +
           '<h1>' + city + ', ' + cors +'</h1>' +
-          '<h2>' + date + '</h2>' +
+          '<h2>' + date + ' @ ' + time + '</h2>' +
           '<a href="#" class="tfm-counter">' + counter + '</a>' +
           '<footer>' +
             '<hr>' +
