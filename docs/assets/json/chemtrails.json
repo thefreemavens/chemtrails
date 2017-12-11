@@ -252,6 +252,27 @@
         "file": "20171210-1200-israel-tel-aviv-neta.jpg",
         "photo": "https://drive.google.com/uc?id=1kM2J1d7PKmhGEUxMmBHH3Ns5DVjL6dBE"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.770769,
+          32.078647
+        ]
+      },
+      "properties": {
+        "id": "20171211-112449",
+        "country": "Israel",
+        "state": "",
+        "city": "Tel Aviv",
+        "date": "December 11, 2017",
+        "time": "11:25",
+        "name": "SophieA",
+        "file": "20171211-1125-israel-tel-aviv-sophiea.jpg",
+        "photo": "https://drive.google.com/uc?id=111VsP0YxW8i0N7_6EzttMuyp0H2KoP88"
+      }
     }
   ]
 }
