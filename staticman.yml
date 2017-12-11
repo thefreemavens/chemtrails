@@ -7,11 +7,11 @@ comments:
   format             : "yaml"
   generatedFields:
     date:
-      type           : "date"
+      type           : date
       options:
-        format       : "iso8601"
+        format       : "timestamp-seconds"
   moderation         : true
-  path               : "source/_data/comments/{options.slug}" (default)
+  path               : "source/_data/comments/{fields.name}" (default)
   requiredFields     : ["name", "email", "message"]
   transforms:
     email            : md5
